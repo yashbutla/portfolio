@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio-Vishal</title>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <section class="banner">
+         <header>
+            <a href="#" class="logo"><span>My</span>Portfolio_</a>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Work</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </header>
+
+         <div class="content">
+            <h3>Hey_</h3>
+            <h2>I am <span id="text"></span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint minima sit ipsam accusantium repellendus reprehenderit autem? Commodi, nulla iusto?</p>
+            <button>Hire me</button>
+            <button class="chat"><i class='bx bx-conversation'></i>Let's Chat</button>
+         </div>
+       <img src="colorse-removebg-preview.png" class="colors">
+       <img src="Bishal-removebg-preview.png" class="men">
+         <ul class="sci">
+            <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+            <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+            <li><a href="#"><i class='bx bxl-skype'></i></a></li>
+            <li><a href="https://www.instagram.com/vishalbutla/"><i class='bx bxl-instagram-alt' ></i></a></li>
+         </ul>
+         <div class="daynight">
+            <i class='bx bxs-moon' ></i>
+            <i class='bx bx-sun'></i>
+         </div>
+      </section>
+
+      <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+      <script>
+
+        let typingTexxt = new Typed("#text",{
+         strings:["Vishal", "Marketer", "Media Star", "Gamer"],
+         loop:true,
+         typeSpeed:150,
+         backSpeed:50,
+         backDelay:1000
+        });
+
+         let banner = document.querySelector('.banner');
+         let daynight = document.querySelector('.daynight');
+
+         daynight.onclick =()=>{
+            banner.classList.toggle('night')
+         }
+      </script>
+</body>
+</html>
